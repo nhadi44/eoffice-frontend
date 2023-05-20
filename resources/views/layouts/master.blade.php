@@ -13,6 +13,12 @@
     <link rel="stylesheet" href="/assets/compiled/css/app-dark.css">
     <link rel="stylesheet" href="/assets/compiled/css/iconly.css">
     <link rel="stylesheet" href="/assets/custom/css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/extensions/datatables.net-bs5/css/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="/assets/compiled/css/table-datatable-jquery.css" />
+    <script src="/assets/extensions/jquery/jquery.min.js"></script>
+    <link rel="stylesheet" href="/assets/extensions/sweetalert2/sweetalert2.min.css" />
+
 </head>
 
 <body>
@@ -54,7 +60,11 @@
     <!-- Need: Apexcharts -->
     {{-- <script src="/assets/extensions/apexcharts/apexcharts.min.js"></script>
     <script src="/assets/static/js/pages/dashboard.js"></script> --}}
-
+    <script src="/assets/extensions/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="/assets/extensions/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
+    <script src="/assets/static/js/pages/datatables.js"></script>
+    <script src="/assets/extensions/sweetalert2/sweetalert2.min.js"></script>
+    >
 </body>
 
 </html>
