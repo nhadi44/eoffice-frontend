@@ -16,6 +16,27 @@ class DashboardController extends Controller
                 'text' => 'Dashboard',
             ]
         ];
-        return view('dashboard::index', compact('breadcrumbs'));
+
+        $tableHeading = [
+            [
+                'text' => 'No'
+            ],
+            [
+                'text' => 'Tanggal Pengiriman'
+            ],
+            [
+                'text' => 'Penerima'
+            ],
+            [
+                'text' => 'Perihal'
+            ],
+            [
+                'text' => 'Status'
+            ],
+            [
+                'text' => 'Aksi'
+            ]
+        ];
+        return view('dashboard::index', compact('breadcrumbs', 'tableHeading'));
     }
 }
