@@ -37,6 +37,8 @@ class DashboardController extends Controller
                 'text' => 'Aksi'
             ]
         ];
-        return view('dashboard::index', compact('breadcrumbs', 'tableHeading'));
+
+        $pageHeading = "Dashboard";
+        return view('dashboard::index', compact('breadcrumbs', 'tableHeading', 'pageHeading'));
     }
 }
