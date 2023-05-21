@@ -1,4 +1,5 @@
 @extends('auth::layouts.master')
+@section('title', 'E Office - Login')
 @section('content')
     <div class="col-lg-5 col-12">
         <div id="auth-left">
