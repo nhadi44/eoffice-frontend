@@ -1,4 +1,5 @@
 {
     "Dashboard": true,
-    "Auth": true
+    "Auth": true,
+    "Message": true
 }

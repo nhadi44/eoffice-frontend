@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="/assets/compiled/css/table-datatable-jquery.css" />
     <script src="/assets/extensions/jquery/jquery.min.js"></script>
     <link rel="stylesheet" href="/assets/extensions/sweetalert2/sweetalert2.min.css" />
+    <link rel="stylesheet" href="/assets/compiled/css/application-email.css" />
 
 </head>
 
@@ -30,7 +31,7 @@
                 alt="avatar-icon" />
             <div id="main-content">
                 <div class="page-heading">
-                    <x-page-heading title="Dashboard" :breadcrumbs="$breadcrumbs" />
+                    <x-page-heading :title="$pageHeading" :breadcrumbs="$breadcrumbs" />
                     <section class="section">
                         <div class="row">
                             @yield('content')
