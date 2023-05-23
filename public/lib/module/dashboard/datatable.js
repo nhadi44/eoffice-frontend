@@ -16,6 +16,7 @@ $(document).ready(function () {
                 Swal.fire({
                     text: "Connection problem, please try again later",
                     icon: "error",
+                    confirmButtonText: "Ok",
                 });
             },
         },

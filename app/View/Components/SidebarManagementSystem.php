@@ -4,22 +4,16 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class Datatable extends Component
+class SidebarManagementSystem extends Component
 {
     /**
      * Create a new component instance.
      *
      * @return void
-     * @return tableHeading array
      */
-
-    public $tableHeading;
-    public $tableId;
-
-    public function __construct($tableHeading, $tableId)
+    public function __construct()
     {
-        $this->tableHeading = $tableHeading;
-        $this->tableId = $tableId;
+        //
     }
 
     /**
@@ -29,6 +23,6 @@ class Datatable extends Component
      */
     public function render()
     {
-        return view('components.datatable');
+        return view('components.sidebar-management-system');
     }
 }

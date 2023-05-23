@@ -1,5 +1,5 @@
 <div class="table-responsive">
-    <table class="table table-hover" id="progresSuratTable" style="width: 100%">
+    <table class="table table-hover" id="{{ $tableId }}" style="width: 100%">
         <thead>
             <tr>
                 @foreach ($tableHeading as $item)
