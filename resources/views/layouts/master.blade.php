@@ -25,10 +25,10 @@
 <body>
     <script src="/assets/static/js/initTheme.js"></script>
     <div id="app">
-        @if (request()->is('/'))
-            <x-sidebar />
-        @else
+        @if (request()->is('eoffice/managements/system*'))
             <x-sidebar-management-system />
+        @else
+            <x-sidebar />
         @endif
         <div id="main" class="layout-navbar navbar-fixed">
             <x-header name="Hadi Nurhidayat" level="Administrator" icon="/assets/compiled/jpg/1.jpg"
@@ -58,6 +58,5 @@
     <script src="/assets/extensions/sweetalert2/sweetalert2.min.js"></script>
     >
     @stack('scripts')
-</body>
 
 </html>

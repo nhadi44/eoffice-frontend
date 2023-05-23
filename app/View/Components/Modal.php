@@ -13,17 +13,20 @@ class Modal extends Component
      * @return $modalId String
      * @return $modalHeaderBackground String
      * @return $modalTitleColor String
+     * @return $modalSize String
      */
 
     public $modalId;
     public $modalHeaderBackground;
     public $modalTitleColor;
+    public $modalSize;
 
-    public function __construct($modalId, $modalHeaderBackground, $modalTitleColor)
+    public function __construct($modalId, $modalHeaderBackground, $modalTitleColor, $modalSize)
     {
         $this->modalId = $modalId;
         $this->modalHeaderBackground = $modalHeaderBackground;
         $this->modalTitleColor = $modalTitleColor;
+        $this->modalSize = $modalSize;
     }
 
     /**

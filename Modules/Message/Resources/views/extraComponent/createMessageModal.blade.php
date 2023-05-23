@@ -1,4 +1,4 @@
- <x-modal modalId="border-less" modalHeaderBackground="bg-primary" modalTitleColor="">
+ <x-modal modalId="border-less" modalHeaderBackground="bg-primary" modalTitleColor="" modalSize="''">
      <x-slot:modalTitle>
          Buat Surat Baru
      </x-slot:modalTitle>
