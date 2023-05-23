@@ -36,3 +36,25 @@ Route::post('/eoffice/managements/system', function (Request $request) {
         'data' => $data
     ], 200);
 });
+
+Route::post('/eoffice/managements/system/master-data/divisions', function (Request $request) {
+    $data = [
+        [
+            'id' => 1,
+            'kode_divisi' => 'PMSO',
+            'nama_divisi' => 'Payment Managed Service & Operations',
+        ],
+        [
+            'id' => 2,
+            'kode_divisi' => 'DPSS',
+            'nama_divisi' => 'Digital platform Solution & Service'
+        ]
+    ];
+
+    return response()->json([
+        'message' => 'Master Data Divisions',
+        'recordsTotal' => count($data),
+        'recordsFiltered' => count($data),
+        'data' => $data
+    ], 200);
+});

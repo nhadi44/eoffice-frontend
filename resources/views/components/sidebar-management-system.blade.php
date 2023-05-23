@@ -53,17 +53,21 @@
                            <span>Dashboard</span>
                        </a>
                    </li>
-                   {{-- <li class="sidebar-item has-sub active">
+                   <li
+                       class="sidebar-item has-sub {{ request()->is('eoffice/managements/system/master-data*') ? 'active' : '' }}">
                        <a href="#" class='sidebar-link'>
                            <i class="bi bi-stack"></i>
-                           <span>Components</span>
+                           <span>Master Data</span>
                        </a>
-                       <ul class="submenu active submenu-open">
-                           <li class="submenu-item active">
-                               <a href="component-accordion.html" class="submenu-link">Accordion</a>
+                       <ul
+                           class="submenu {{ request()->is('eoffice/managements/system/master-data*') ? 'active submenu-open' : 'submenu-closed' }}">
+                           <li
+                               class="submenu-item {{ request()->is('eoffice/managements/system/master-data/divisions') ? 'active' : '' }}">
+                               <a href="{{ route('eoffice.managements.system.master-data.divisions') }}"
+                                   class="submenu-link">Divisi</a>
                            </li>
                        </ul>
-                   </li> --}}
+                   </li>
                </ul>
            </div>
        </div>
