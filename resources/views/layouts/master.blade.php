@@ -25,7 +25,11 @@
 <body>
     <script src="/assets/static/js/initTheme.js"></script>
     <div id="app">
-        <x-sidebar />
+        @if (request()->is('/'))
+            <x-sidebar />
+        @else
+            <x-sidebar-management-system />
+        @endif
         <div id="main" class="layout-navbar navbar-fixed">
             <x-header name="Hadi Nurhidayat" level="Administrator" icon="/assets/compiled/jpg/1.jpg"
                 alt="avatar-icon" />
@@ -47,12 +51,13 @@
     <script src="/assets/compiled/js/app.js"></script>
     <!-- Need: Apexcharts -->
     {{-- <script src="/assets/extensions/apexcharts/apexcharts.min.js"></script>
-    <script src="/assets/static/js/pages/dashboard.js"></script> --}}
+<script src="/assets/static/js/pages/dashboard.js"></script> --}}
     <script src="/assets/extensions/datatables.net/js/jquery.dataTables.min.js"></script>
     <script src="/assets/extensions/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
     <script src="/assets/static/js/pages/datatables.js"></script>
     <script src="/assets/extensions/sweetalert2/sweetalert2.min.js"></script>
     >
+    @stack('scripts')
 </body>
 
 </html>

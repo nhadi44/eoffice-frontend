@@ -1,5 +1,7 @@
 {
     "Dashboard": true,
     "Auth": true,
-    "Message": true
+    "Message": true,
+    "Superadmin": true,
+    "ManagementSystem": true
 }
