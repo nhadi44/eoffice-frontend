@@ -14,9 +14,11 @@
 use Illuminate\Support\Facades\Route;
 use Modules\ManagementSystem\Http\Controllers\ManagementSystemController;
 use Modules\ManagementSystem\Http\Controllers\MasterDataDivisiController;
+use Modules\ManagementSystem\Http\Controllers\MasterDataJabatanController;
 
 Route::get('/eoffice/managements/system', [ManagementSystemController::class, 'index'])->name('eoffice.managements.system');
 
 Route::middleware(['guest'])->group(function () {
     Route::get('/eoffice/managements/system/master-data/divisions', [MasterDataDivisiController::class, 'index'])->name('eoffice.managements.system.master-data.divisions');
+    Route::get('/eoffice/managements/system/master-data/positions', [MasterDataJabatanController::class, 'index'])->name('eoffice.managements.system.master-data.positions');
 });

@@ -7,7 +7,7 @@
                 <div class="card-body">
                     <button class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#create-master-division"><i
                             class="bi bi-plus fs-5"></i>
-                        <span>Tambah Master Divisi</span>
+                        <span>Tambah Master Data Divisi</span>
 
                     </button>
                     <x-datatable tableId="masterDivisi" :tableHeading="$tableHeading" />
