@@ -71,6 +71,11 @@
                                <a href="{{ route('eoffice.managements.system.master-data.positions') }}"
                                    class="submenu-link">Jabatan</a>
                            </li>
+                           <li
+                               class="submenu-item {{ request()->is('eoffice/managements/system/master-data/employees') ? 'active' : '' }}">
+                               <a href="{{ route('eoffice.managements.system.master-data.employees') }}"
+                                   class="submenu-link">Karyawan</a>
+                           </li>
                        </ul>
                    </li>
                </ul>

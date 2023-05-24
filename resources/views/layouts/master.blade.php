@@ -19,6 +19,8 @@
     <script src="/assets/extensions/jquery/jquery.min.js"></script>
     <link rel="stylesheet" href="/assets/extensions/sweetalert2/sweetalert2.min.css" />
     <link rel="stylesheet" href="/assets/compiled/css/application-email.css" />
+    <link rel="stylesheet" href="/assets/extensions/flatpickr/flatpickr.min.css" />
+    <link rel="stylesheet" href="/assets/extensions/choices.js/public/assets/styles/choices.css" />
 
 </head>
 
@@ -57,6 +59,8 @@
     <script src="/assets/static/js/pages/datatables.js"></script>
     <script src="/assets/extensions/sweetalert2/sweetalert2.min.js"></script>
     >
+    <script src="/assets/extensions/choices.js/public/assets/scripts/choices.js"></script>
+    <script src="/assets/static/js/pages/form-element-select.js"></script>
     @stack('scripts')
 
 </html>
