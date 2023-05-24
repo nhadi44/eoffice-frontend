@@ -58,3 +58,25 @@ Route::post('/eoffice/managements/system/master-data/divisions', function (Reque
         'data' => $data
     ], 200);
 });
+
+Route::post('/eoffice/managements/system/master-data/positions', function (Request $request) {
+    $data = [
+        [
+            'id' => 1,
+            'kode_jabatan' => 'CEO',
+            'nama_jabatan' => 'Chief Executive Officer',
+        ],
+        [
+            'id' => 2,
+            'kode_jabatan' => 'CCO',
+            'nama_jabatan' => 'Chief Commercial Officer',
+        ]
+    ];
+
+    return response()->json([
+        'message' => 'Master Data Positions',
+        'recordsTotal' => count($data),
+        'recordsFiltered' => count($data),
+        'data' => $data
+    ], 200);
+});
